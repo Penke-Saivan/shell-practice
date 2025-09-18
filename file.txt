@@ -1,1 +1,3 @@
-ghsjs
+Untracked before git add <file Name>
+After git add <fileName> it changes to index added
+Now after writning something in the file changes to Modified
