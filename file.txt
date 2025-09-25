@@ -1,5 +1,0 @@
-Untracked before git add <file Name>
-After git add <fileName> it changes to index added
-Now after writning something in the file changes to Modified
-Once the push is done there will be no help text for a file
-Actually in thelast line I was saying after the push there won't be any help text but I should say after commit
