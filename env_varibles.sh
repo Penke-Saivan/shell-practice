@@ -1,1 +1,1 @@
-echo  "$Course "
+echo  "$Course1 "
