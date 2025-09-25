@@ -1,4 +1,5 @@
-LOG_FILE=$PWD/$0.log
+SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
+LOG_FILE=$PWD/$SCRIPT_NAME.log
 echo $PWD
 dnf install mysql -y &>>$LOG_FILE
 
