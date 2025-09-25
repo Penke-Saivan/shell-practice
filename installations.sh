@@ -11,9 +11,9 @@ else
 fi
 dnf install mysql -y &>>$LOG_FILE
 
-
+echo $?
 if [ $? -ne 0 ]; then
-    echo $?
+    
     echo "ERROR:: Installing MySQL is failure"
     exit 1
 else
