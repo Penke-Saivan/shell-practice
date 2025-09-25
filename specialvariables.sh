@@ -37,3 +37,14 @@ echo "Script PID is $$"
 # PID of the last command
 sleep 10 &
  echo "PID of last command $!"
+
+ # Output
+#  All variables a pssed as ARGS-
+# All variables a pssed as ARGS-
+# Script name is specialvariables.sh
+# Script name is /home/ec2-user/shell-practice
+# Script name is ec2-user
+# Script name is /home/ec2-user
+# Script PID is 2484
+# PID of last command 2485
+#ec2-user    2485       1  0 11:54 pts/0    00:00:00 sleep 10
