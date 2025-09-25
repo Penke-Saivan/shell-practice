@@ -2,7 +2,7 @@
 
 #Even or not
 
-if[$($1%2) -e 0]; then 
+if[1 -e 1]; then 
     echo "Eeveen"
 else
     echo "odd"
