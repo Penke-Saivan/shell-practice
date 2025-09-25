@@ -1,12 +1,12 @@
 #!/bin/bash
 Date=$(date)
 echo $Date
-Start=$(date +%s)
+StartTime=$(date +%s)
 echo $StartTime
 sleep 1
 
-End= $(date +%s)
+EndTime=$(date +%s)
 
-Total= $(($End-$Start))
+Total=$(($EndTime-$StartTime))
 
 echo "Time elapsed is $Total"
