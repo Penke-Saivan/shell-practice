@@ -3,3 +3,6 @@
 #All ARGS
 echo "All variables a pssed as ARGS- $@"
 echo "All variables a pssed as ARGS- $*"
+echo $1
+echo $2
+echo $3
