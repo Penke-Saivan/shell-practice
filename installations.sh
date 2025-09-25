@@ -5,7 +5,7 @@ USERID=$(id -u)
 # echo $PWD
 if [ $USERID -ne 0 ]; then
     echo "Go with Super User Privilege"
-    # exit 1
+    exit 1
 else
     echo "Already a super user privilege"
 fi
