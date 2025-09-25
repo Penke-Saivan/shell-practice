@@ -33,5 +33,5 @@ echo "Script name is $USER"
 echo "Script name is $$"
 
 # PID of the last command
-sleep 30
- echo $!
+sleep 5
+ echo "PID of last command $!"
