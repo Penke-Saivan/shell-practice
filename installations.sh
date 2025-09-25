@@ -1,4 +1,4 @@
-# LOG_FILE=$PWD/$0.log
+LOG_FILE=$PWD/$0.log
 echo $PWD
 dnf install mysql -y &>>LOG_FILE
 
