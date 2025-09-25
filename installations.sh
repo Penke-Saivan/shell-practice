@@ -1,4 +1,6 @@
-dnf install mysql -y
+# LOG_FILE=$PWD/$0.log
+echo $PWD
+dnf install mysql -y &>>LOG_FILE
 
 if [ $? -ne 0 ]; then
     echo "ERROR:: Installing MySQL is failure"
