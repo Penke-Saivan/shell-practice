@@ -35,5 +35,5 @@ echo "Script name is $HOME"
 echo "Script PID is $$"
 
 # PID of the last command
-sleep 5
+sleep 10 &
  echo "PID of last command $!"
