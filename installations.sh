@@ -1,7 +1,16 @@
 SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
 LOG_FILE=$PWD/$SCRIPT_NAME.log
-echo $PWD
+USERID=$(id -u)
+# echo $USERID
+# echo $PWD
+if [ $USERID -ne 0 ]; then
+    echo "Go with Super User Privilege"
+    # exit 1
+else
+    echo "Already a super user privilege"
+fi
 dnf install mysql -y &>>$LOG_FILE
+echo $?
 
 if [ $? -ne 0 ]; then
     echo "ERROR:: Installing MySQL is failure"
