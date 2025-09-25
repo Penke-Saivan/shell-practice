@@ -27,10 +27,12 @@ echo "Script name is $PWD"
 
 # Current user
 echo "Script name is $USER"
+
 #Home directory of user
-echo "Script name is $USER"
+echo "Script name is $HOME"
+
 #PID
-echo "Script name is $$"
+echo "Script PID is $$"
 
 # PID of the last command
 sleep 5
