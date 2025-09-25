@@ -1,11 +1,11 @@
 #!/bin/bash
 Date=$date
-echo "$Date"
-StartTime=$(date +s%)
+echo $Date
+StartTime=$(date +%s)
 
 sleep 10
 
-EndTime= $(date +s%)
+EndTime= $(date +%s)
 
 TotalTime= $(($StartTime-$EndTime))
 
