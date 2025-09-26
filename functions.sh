@@ -18,12 +18,31 @@ VALIDATE(){
         echo "Installing $2 is SUCCESS"
     fi        
 }
+echo "-------------------------INSTALL MYSQL ---------------------------"
+dnf list installed mysql
 
-dnf install mysql -y
-VALIDATE $? "My SQL"
+if [ $? -ne 0]; then
+    dnf install mysql -y
+    VALIDATE $? "My SQL"
+else 
+    echo "mysql already exists... SKIPPING " 
+fi
+echo "-------------------------INSTALL NGINX ---------------------------"
 
-dnf install nginx  -y
-VALIDATE $? "Nginx"
+dnf list installed nginx
 
-dnf install python3   -y
-VALIDATE $? "Python3"
+if [ $? -ne 0]; then
+    dnf install nginx -y
+    VALIDATE $? "nginx"
+else 
+    echo "nginx already exists... SKIPPING " 
+fi
+echo "-------------------------INSTALL PYTHON ---------------------------"
+dnf list installed python3
+
+if [ $? -ne 0]; then
+    dnf install python3 -y
+    VALIDATE $? "python3"
+else 
+    echo "python3 already exists... SKIPPING " 
+fi
