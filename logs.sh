@@ -7,9 +7,10 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-LOGS_FOLDER="/var/log/shell-script"
+LOGS_FOLDER="/var/log/shellscript-logs"
 FILE_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_FOLDER/$FILE_NAME.log"
+mkdir  $LOGS_FOLDER
 if [ $USERID -ne 0 ]; then
     echo -e "Please use $G super user privilege $N"
     exit 1
