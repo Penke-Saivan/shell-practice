@@ -25,7 +25,7 @@ VALIDATE(){
         echo -e "Installing $2 is $G SUCCESS............$N"
     fi        
 }
-echo "---------------------$Y----INSTALL MYSQL -------------------------$N--"
+echo -e "---------------------$Y----INSTALL MYSQL -------------------------$N--"
 dnf list installed mysql
 
 if [ $? -ne 0 ]; then
@@ -34,7 +34,7 @@ if [ $? -ne 0 ]; then
 else 
     echo -e "mysql already exists... $Y SKIPPING...................$N " 
 fi
-echo "------------------------- $Y  INSTALL NGINX ------------------$N---------"
+echo -e "------------------------- $Y  INSTALL NGINX ------------------$N---------"
 
 dnf list installed nginx
 
@@ -44,7 +44,7 @@ if [ $? -ne 0 ]; then
 else 
     echo -e "nginx already exists... $Y SKIPPING...................$N " 
 fi
-echo "-------------------$Y-----INSTALL PYTHON -------------------------$N--"
+echo -e "-------------------$Y-----INSTALL PYTHON -------------------------$N--"
 dnf list installed python3
 
 if [ $? -ne 0 ]; then
