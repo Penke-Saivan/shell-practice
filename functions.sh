@@ -18,7 +18,7 @@ VALIDATE(){
         echo "Installing $2 is SUCCESS"
     fi        
 }
-echo "-------------------------INSTALL MYSQL ---------------------------"
+echo "-------------------------INSTALL MYSQL -GIVES MERGE CONFLICT---------------------------"
 dnf list installed mysql
 
 if [ $? -ne 0 ]; then
