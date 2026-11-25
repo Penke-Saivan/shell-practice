@@ -60,3 +60,6 @@ if [ $? -ne 0 ]; then
 else 
     echo -e "python3 already exists... $Y SKIPPING...................$N " | tee -a $LOG_FILE
 fi
+
+#echo -e "..."
+#Prints text to the terminal and enables interpretation of backslash escape sequences (such as \n for a new line or \t for a tab) thanks to the -e flag.
