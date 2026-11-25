@@ -29,7 +29,12 @@ VALIDATE(){
 }
 echo -e "---------------------$Y----INSTALL MYSQL -------------------------$N--" | tee -a $LOG_FILE
 dnf list installed mysql &>> $LOG_FILE
+#tee -a $LOG_FILE
+#Takes the incoming text and does two things at once:
 
+#Displays it on the screen (standard output).
+
+#Appends (-a) it to the file path stored in the $LOG_FILE variable (rather than overwriting existing log entries).
 if [ $? -ne 0 ]; then
     dnf install mysql -y &>> $LOG_FILE
     VALIDATE $? "My SQL"
